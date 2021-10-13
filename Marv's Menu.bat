@@ -1,0 +1,253 @@
+@echo off
+:Password
+cls
+set /p Password=Passwort: 
+if %Password% == Marv492005 goto Intro
+echo wrong
+pause
+goto Password
+
+:Intro
+cls
+msg * Welcome %username%
+@mode con cols=75 lines=1000
+color A
+echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMNmdyso+//:--..````````.--://+syhmNMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMNds/-`                                  `-/ohNMMMMMMMMMMMM
+echo MMMMMMMMMNs:                                              .omMMMMMMMMM
+echo MMMMMMMMy`                                                   +NMMMMMMM
+timeout 1 >NUL
+echo MMMMMMMo                                                      -MMMMMMM
+echo MMMMMMh                                                        +MMMMMM
+echo MMMMMM-                                                        `mMMMMM
+echo MMMMMh                                                          +MMMMM
+echo MMMMM/      ./shdmmdhyo+-`                   -+shmNNNmdy+.      .MMMMM
+echo MMMMN`    /hhyosyhhdNMMMMNh/`             :yNMMMMNdhhhsoyhd+     dMMMM
+timeout 1 >NUL
+echo MMMMd   .s/    :shmNddhhNMMMNo`         +mMMMMdhhdNmds:    /s-   yMMMM
+echo MMMMs   .          `:yMNysmMMMh        yMMMmyymMh/`          .   oMMMM
+echo MMMM+                 `oNMhshd+        /dyohMNs.                 +MMMM
+echo MMMM:                   `/mMd:          .hMm+`                   :MMMM
+echo MMMM.         `.-::-.`    `dMMo        .Nm/     `.::::-`         -MMMM
+echo MMMM.     `+hNMMMMMMMNds:  `dMM/       ./    :smMMMMMMMMNh+`     .MMMM
+timeout 1 >NUL
+echo MMMM`  `-+NMMMMMMMMMMMMMMNy.yMMd          .yNMMMMMMMMMMMMMMN+-`  `MMMM
+echo MMMM`  /MMMMMMMMMMMMMMMMNmy.hMMN`         `smNmmmmmmddddddhhssys++MMMM
+echo MMMM`  +hso/::---..```      dMMN.                                `MMMM
+echo MMMM`                       dMMN.                                `MMMM
+echo MMMMy                      .NMMN`                                .MMMM
+echo MMMMMo                     +MMMN`                                /MMMM
+timeout 1 >NUL
+echo MMMMMMs                    dMMMN`                               -mMMMM
+echo MMMMN/md-                `sMMMMm                              .sMMMMMM
+echo MMMMM+`dMdo-.....-::/:`/dMMMMMMd        `yy/               `/hhoMMMMMM
+echo MMMMMN-.NMhNMMooo+/:.`.NMMh:NMM+           os   .ossssyhdmmMMm`hMMMMMM
+echo MMMMMMm`-Nm:NMh`       yMd .NMM.            /         +MMh.NN--MMMMMMM
+echo MMMMMMMh .my-mMNo`      -- .NMm`                    `yMMs +M: dMMMMMMM
+timeout 1 >NUL
+echo MMMMMMMMy``hh-mMMNy+.       .MN.     `/:          .oNMM+ +N/ oMMMMMMMM
+echo MMMMMMMMMy  om+oNMMMMNhs/:/omMMMmhyydNMMh:    .:odMMMN:.hN: +MMMMMMMMM
+echo MMMMMMMMMMh` :Nd//yNMMMMMMMMMMMMMs/hMMMMMMNmNMMMMMMm+.oNm- +MMMMMMMMMM
+echo MMMMMMMMMMMd` .dMd:`-+ymMMMMMMMd-   -dMMMMMMMMMNho- -yMh` oMMMMMMMMMMM
+echo MMMMMMMMMMMMm. `yMMm/`   .:/++o++oooooddhyso/:.     -mo `yMMMMMMMMMMMM
+echo MMMMMMMMMMMMMN:  oMMMNo-                           :m: .dMMMMMMMMMMMMM
+timeout 1 >NUL
+echo MMMMMMMMMMMMMMM+  +MMM:-::/:-.``                  +h` :NMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMs` /MM-     .:omNNNNNNy`        `s+  oMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMd. /M-        -MMMMMd.        .y- `hMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMN: +h        -MMMMM+         /` -mMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMs`.       .mMMMMMd`          +MMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMMN:       oMMMmmMM/        `hMMMMMMMMMMMMMMMMMMMMM
+timeout 1 >NUL
+echo MMMMMMMMMMMMMMMMMMMMMMMs`     /MMMMMMM:       :NMMMMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMMMMMd.    `NMMMMMN`     `yMMMMMMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMMMMMMNo`   oMMMMMo    .sNMMMMMMMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMMMMMMMMNs:.-MMMMM` -+hMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   
+timeout 2 >NUL
+
+:test
+cls
+msg * Menu was loaded successfully
+goto start
+
+:start
+cls
+@mode con cols=122 lines=30
+title Welcome to the Hub %username%
+echo 1) Zum Main Menu
+echo 2) schliessen
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p start=choose: 
+if %start% == 1 goto MainMenu
+if %start% == 2 goto schliessen
+goto start
+
+:MainMenu
+cls
+@mode con cols=122 lines=30
+title Welcome to the MainMenu %username%
+echo 1) System Info
+echo 2) IP Info
+echo 3) Website
+echo 4) Credits
+echo 5) Sherlock
+echo 6) Schliessen
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p MainMenu=choose: 
+if %MainMenu% == 1 goto PCInfo
+if %MainMenu% == 2 goto IP Info
+if %MainMenu% == 3 goto Website
+if %MainMenu% == 4 goto Credits
+if %MainMenu% == 5 goto Sherlock
+if %MainMenu% == 6 goto start
+goto MainMenu
+
+:PCInfo
+cls
+title Welcome to your System Info %username%
+systeminfo
+echo 1) schliessen
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p PCInfo=choose: 
+if %PCInfo% == 1 goto MainMenu
+goto PCInfo
+
+:IP Info
+cls
+title Welcome to your IP Info
+ipconfig
+echo.
+echo 1) schliessen
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p IP=choose: 
+if %IP% == 1 goto MainMenu
+goto IP Info
+
+:Website
+cls
+title Welcome to the Website Menu
+@mode con cols=125 lines=9001
+echo 1) Twitch
+echo 2) Roblox
+echo 3) Instagram
+echo 4) Twitter
+echo 5) Pastebin
+echo 6) Whatsapp Web
+echo 7) TikTok
+echo 8) Github
+echo 9) Youtube
+echo 10) Gmail
+echo 11) GMX
+echo 12) Epicgames
+echo 13) Ubisoft
+echo 14) Steam
+echo 15) Discord
+echo 16) Developer Forum
+echo 17) Discord Bot List
+echo 18) Roblox Deveoper Forum
+echo 19) YT Channel TeamSilencium
+echo 20) TeamSilencium Roblox Group
+echo 21) My Pastebin Account
+echo 22) Web.De
+echo 23) Google Docs
+echo 24) Minecraft
+echo 25) Rockstar Games
+echo 26) Wasteland.zz
+echo 27) BASE64
+echo 28) BAT Creator Roblox Profile
+echo 29) Ebay
+echo 30) Amazon
+echo 31) Brave
+echo 32) Snapchat Log-in
+echo 33) Micresoft
+echo 34) Marv's Menu Discord Server
+echo 35) TeamSilencium Discord Server
+echo 36) schliessen
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p Website=choose: 
+if %Website% == 1 Start https://twitch.com/
+if %Website% == 2 Start https://www.roblox.com/home
+if %Website% == 3 Start https://www.instagram.com/
+if %Website% == 4 Start https://twitter.com/?lang=de
+if %Website% == 5 Start https://pastebin.com/
+if %Website% == 6 Start https://web.whatsapp.com/
+if %Website% == 7 Start https://www.tiktok.com/de-DE
+if %Website% == 8 Start https://github.com/
+if %Website% == 9 Start https://www.youtube.com/
+if %Website% == 10 Start https://mail.google.com/mail/u/0/#inbox
+if %Website% == 11 Start https://www.gmx.net/
+if %Website% == 12 Start https://www.epicgames.com/site/de/home
+if %Website% == 13 Start https://www.ubisoft.com/de-de/
+if %Website% == 14 Start https://store.steampowered.com/?l=german
+if %Website% == 15 Start https://discord.com/
+if %Website% == 16 Start https://discord.com/developers/docs/intro
+if %Website% == 17 Start https://top.gg/
+if %Website% == 18 Start https://devforum.roblox.com/
+if %Website% == 19 Start https://www.youtube.com/channel/UCN5NRQAZs-nLpYLTAYxUukw
+if %Website% == 20 Start https://www.roblox.com/groups/11507841/Silencium-studios#!/about
+if %Website% == 21 Start https://pastebin.com/u/Marv492005
+if %Website% == 22 start https://web.de/?origin=lpc
+if %Website% == 23 start https://www.google.de/intl/de/forms/about/
+if %Website% == 24 start https://www.minecraft.net/de-de
+if %Website% == 25 start https://www.rockstargames.com/de/
+if %Website% == 26 start https://wasteland.rfc822.org/cgi-bin/inbox?inbox=Kali
+if %Website% == 27 start https://www.base64encode.org/
+if %Website% == 28 start https://www.roblox.com/users/513465884/profile
+if %Website% == 29 start https://www.ebay.de/
+if %Website% == 30 start https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=391572096639&hvpos=&hvnetw=g&hvrand=13940885671462430284&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042924&hvtargid=kwd-10573980&hydadcr=12763_1991086
+if %Website% == 31 start https://brave.com/de/download/
+if %Website% == 32 start https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome
+if %Website% == 33 start https://discord.gg/XdvwE6pM
+if %Website% == 34 start https://www.microsoft.com/de-de?&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&s_kwcid=AL!4249!3!507886424089!e!!g!!microsoft&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&OCID=AID2200063_SEM_Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s
+if %Website% == 35 start https://discord.gg/YT4GxBVP
+if %Website% == 36 goto MainMenu
+goto Website
+
+:Credits
+cls
+md Infos
+cd %userprofile%\Desktop\Infos
+msg * Hallo %username% du hast nun eine Credit Datei MFG Marv492005 :^>
+echo Hallo Liebe User >Credits.txt
+echo Hier ist der Creator diese BAT >>Credits.txt
+echo Diese Datei ist hier falls du die Credits nicht öffnen kannst >>Credits.txt
+echo Mein Name ist Marv492005 ich bin der Creator ich bin vom TeamSilencium >>Credits.txt
+echo Mein Helfer ist Baum er hat mir die Idee gegeben Batch zu lernen >>Credits.txt
+echo Von Baum stammt diese ganzen Dox Optionen PS: man kann sehr Viel Spaß mit haben >>Credits.txt
+echo Eigentlich war diese BAT nur ein Test aber daraus wurde ein Menü >>Credits.txt
+echo Ich werde aber immer noch weiter an dem Projekt arbeiten und bald wird noch viel mehr kommen >>Credits.txt
+echo Falls du Probleme hast oder Fragen hast den adde mich doch einfach auf Discord >>Credits.txt
+echo Falls es Probleme mit dem Dox Tool ist bitte Meldet euch bei Baum >>Credits.txt
+echo Discord Name: Marv492005#8419 >>Credits.txt
+echo Discord Name Baum: baum#2873 >>Credits.txt
+echo My Discord Server: https://discord.gg/XdvwE6pM >>Credits.txt
+echo TeamSilencium Discord Server: https://discord.gg/YT4GxBVP >>Credits.txt
+echo Viel Spaß mit diesem Menü >>Credits.txt
+start Credits.txt
+goto MainMenu
+
+:Sherlock
+cls
+title Welcome to Sherlock %username% (Made By Baum)
+msg * Web Version from Sherlock Click on the Play Button
+echo 1) Sherlock
+echo 2) schliessen
+echo.
+echo.
+set /p Sherlock=choose: 
+if %Sherlock% == 1 start https://replit.com/@sjadhiasah/nicht-sherlock
+if %Sherlock% == 2 goto MainMenu
+goto Sherlock
