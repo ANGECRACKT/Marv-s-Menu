@@ -94,9 +94,10 @@ title Welcome to the MainMenu %username%
 echo 1) System Info
 echo 2) IP Info
 echo 3) Website
-echo 4) Credits
-echo 5) Sherlock
-echo 6) Schliessen
+echo 4) Programme
+echo 5) Credits
+echo 6) Sherlock
+echo 7) Schliessen
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -104,9 +105,10 @@ set /p MainMenu=choose:
 if %MainMenu% == 1 goto PCInfo
 if %MainMenu% == 2 goto IP Info
 if %MainMenu% == 3 goto Website
-if %MainMenu% == 4 goto Credits
-if %MainMenu% == 5 goto Sherlock
-if %MainMenu% == 6 goto start
+if %MainMenu% == 4 goto Programme
+if %MainMenu% == 5 goto Credits
+if %MainMenu% == 6 goto Sherlock
+if %MainMenu% == 7 goto start
 goto MainMenu
 
 :PCInfo
@@ -171,9 +173,10 @@ echo 30) Amazon
 echo 31) Brave
 echo 32) Snapchat Log-in
 echo 33) Micresoft
-echo 34) Marv's Menu Discord Server
-echo 35) TeamSilencium Discord Server
-echo 36) schliessen
+echo 34) My Github Account
+echo 35) Marv's Menu Discord Server
+echo 36) TeamSilencium Discord Server
+echo 37) schliessen
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -210,10 +213,11 @@ if %Website% == 29 start https://www.ebay.de/
 if %Website% == 30 start https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=391572096639&hvpos=&hvnetw=g&hvrand=13940885671462430284&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042924&hvtargid=kwd-10573980&hydadcr=12763_1991086
 if %Website% == 31 start https://brave.com/de/download/
 if %Website% == 32 start https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome
-if %Website% == 33 start https://discord.gg/XdvwE6pM
-if %Website% == 34 start https://www.microsoft.com/de-de?&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&s_kwcid=AL!4249!3!507886424089!e!!g!!microsoft&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&OCID=AID2200063_SEM_Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s
-if %Website% == 35 start https://discord.gg/YT4GxBVP
-if %Website% == 36 goto MainMenu
+if %Website% == 33 start https://www.microsoft.com/de-de?&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&s_kwcid=AL!4249!3!507886424089!e!!g!!microsoft&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&OCID=AID2200063_SEM_Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s
+if %Website% == 34 start https://github.com/ANGECRACKT
+if %Website% == 35 start https://discord.gg/XdvwE6pM
+if %Website% == 36 start https://discord.gg/YT4GxBVP
+if %Website% == 37 goto MainMenu
 goto Website
 
 :Credits
@@ -247,7 +251,25 @@ echo 1) Sherlock
 echo 2) schliessen
 echo.
 echo.
+echo                                                                                                     [Made By Marv492005]
 set /p Sherlock=choose: 
 if %Sherlock% == 1 start https://replit.com/@sjadhiasah/nicht-sherlock
 if %Sherlock% == 2 goto MainMenu
 goto Sherlock
+
+:Programme
+cls
+title Welcome to the Programm Menu
+echo 1) Brave
+echo 2) Chrome
+echo 3) Explorer
+echo 4) schliessen
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p Programme=choose: 
+if %Programme% == 1 start brave.exe
+if %Programme% == 2 start chrome.exe
+if %Programme% == 3 start iexplore.exe
+if %Programme% == 4 goto MainMenu
+goto Programme
