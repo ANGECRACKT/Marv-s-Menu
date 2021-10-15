@@ -85,7 +85,7 @@ cls
 @mode con cols=122 lines=30
 title Welcome to the Hub %username%
 echo 1) To the Main Menu
-echo 2) Options [In Work]
+echo 2) Options
 echo 3) Close
 echo.
 echo.
@@ -136,17 +136,32 @@ goto Options
 :Colors
 cls
 title Welcome to the ^Color Change Menu
-echo 1) Red
+echo 1) Black
 echo 2) Blue
-echo 3) Yellow
-echo 4) Green
-echo 5) Close
+echo 3) Green
+echo 4) Cyan
+echo 5) Red
+echo 6) Purple
+echo 7) Yellow
+echo 8) Light Gray
+echo 9) Gray
+echo 10) Light Blue
+echo 11) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 set /p Colors=choose: 
-if %Colors% == 1 color A
-if %Colors% == 5 goto Options
+if %Colors% == 1 color 0
+if %Colors% == 2 color 1
+if %Colors% == 3 color 2
+if %Colors% == 4 color 3
+if %Colors% == 5 color 4
+if %Colors% == 6 color 5
+if %Colors% == 7 color 6
+if %Colors% == 8 color 7
+if %Colors% == 9 color 8
+if %Colors% == 10 color 9
+if %Colors% == 11 goto Options
 goto Colors
 
 :PCInfo
