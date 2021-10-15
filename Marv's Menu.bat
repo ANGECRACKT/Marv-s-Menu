@@ -9,6 +9,13 @@ goto Password
 
 :Intro
 cls
+echo set speechobject=createobject("sapi.spvoice") >%userprofile%\AppData\Local\Temp\welcome.vbs
+echo dim speechobject >>%userprofile%\AppData\Local\Temp\welcome.vbs
+echo speechobject.speak "Welcome %username%" >>%userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+start %userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+del %userprofile%\AppData\Local\Temp\welcome.vbs
 msg * Welcome %username%
 @mode con cols=75 lines=1000
 color A
@@ -77,14 +84,16 @@ goto start
 cls
 @mode con cols=122 lines=30
 title Welcome to the Hub %username%
-echo 1) Zum Main Menu
-echo 2) schliessen
+echo 1) To the Main Menu
+echo 2) Options [In Work]
+echo 3) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 set /p start=choose: 
 if %start% == 1 goto MainMenu
-if %start% == 2 goto schliessen
+if %start% == 2 goto Options
+if %start% == 3 goto schliessen
 goto start
 
 :MainMenu
@@ -97,7 +106,7 @@ echo 3) Website
 echo 4) Programme
 echo 5) Credits
 echo 6) Sherlock
-echo 7) Schliessen
+echo 7) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -111,11 +120,40 @@ if %MainMenu% == 6 goto Sherlock
 if %MainMenu% == 7 goto start
 goto MainMenu
 
+:Options
+cls
+title Welcome to the Options %username%
+echo 1) Change ^Color
+echo 2) Close
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p Options=choose: 
+if %Options% == 1 goto Colors
+if %Options% == 2 goto start
+goto Options
+
+:Colors
+cls
+title Welcome to the ^Color Change Menu
+echo 1) Red
+echo 2) Blue
+echo 3) Yellow
+echo 4) Green
+echo 5) Close
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p Colors=choose: 
+if %Colors% == 1 color A
+if %Colors% == 5 goto Options
+goto Colors
+
 :PCInfo
 cls
 title Welcome to your System Info %username%
 systeminfo
-echo 1) schliessen
+echo 1) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -128,7 +166,7 @@ cls
 title Welcome to your IP Info
 ipconfig
 echo.
-echo 1) schliessen
+echo 1) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -174,9 +212,10 @@ echo 31) Brave
 echo 32) Snapchat Log-in
 echo 33) Micresoft
 echo 34) My Github Account
-echo 35) Marv's Menu Discord Server
-echo 36) TeamSilencium Discord Server
-echo 37) schliessen
+echo 35) Baum's Github Account
+echo 36) Marv's Menu Discord Server
+echo 37) TeamSilencium Discord Server
+echo 38) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -215,9 +254,10 @@ if %Website% == 31 start https://brave.com/de/download/
 if %Website% == 32 start https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome
 if %Website% == 33 start https://www.microsoft.com/de-de?&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&s_kwcid=AL!4249!3!507886424089!e!!g!!microsoft&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&OCID=AID2200063_SEM_Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s
 if %Website% == 34 start https://github.com/ANGECRACKT
-if %Website% == 35 start https://discord.gg/XdvwE6pM
-if %Website% == 36 start https://discord.gg/YT4GxBVP
-if %Website% == 37 goto MainMenu
+if %Website% == 35 start https://github.com/baum1810
+if %Website% == 36 start https://discord.gg/XdvwE6pM
+if %Website% == 37 start https://discord.gg/YT4GxBVP
+if %Website% == 38 goto MainMenu
 goto Website
 
 :Credits
@@ -247,8 +287,9 @@ goto MainMenu
 cls
 title Welcome to Sherlock %username% (Made By Baum)
 msg * Web Version from Sherlock Click on the Play Button
+echo.
 echo 1) Sherlock
-echo 2) schliessen
+echo 2) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -263,7 +304,7 @@ title Welcome to the Programm Menu
 echo 1) Brave
 echo 2) Chrome
 echo 3) Explorer
-echo 4) schliessen
+echo 4) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
