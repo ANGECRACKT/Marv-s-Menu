@@ -103,7 +103,7 @@ title Welcome to the MainMenu %username%
 echo 1) System Info
 echo 2) IP Info
 echo 3) Website
-echo 4) Programme
+echo 4) Programms
 echo 5) Credits
 echo 6) Sherlock
 echo 7) Close
@@ -114,7 +114,7 @@ set /p MainMenu=choose:
 if %MainMenu% == 1 goto PCInfo
 if %MainMenu% == 2 goto IP Info
 if %MainMenu% == 3 goto Website
-if %MainMenu% == 4 goto Programme
+if %MainMenu% == 4 goto Programms
 if %MainMenu% == 5 goto Credits
 if %MainMenu% == 6 goto Sherlock
 if %MainMenu% == 7 goto start
@@ -313,7 +313,7 @@ if %Sherlock% == 1 start https://replit.com/@sjadhiasah/nicht-sherlock
 if %Sherlock% == 2 goto MainMenu
 goto Sherlock
 
-:Programme
+:Programms
 cls
 title Welcome to the Programm Menu
 echo 1) Brave
