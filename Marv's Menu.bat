@@ -124,7 +124,7 @@ goto MainMenu
 cls
 title Welcome to the Options %username%
 echo 1) Change ^Color
-echo 2) Toogle Text to Speak
+echo 2) Toogle Text to Speak [in Work]
 echo 3) Close
 echo.
 echo.
