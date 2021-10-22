@@ -124,13 +124,15 @@ goto MainMenu
 cls
 title Welcome to the Options %username%
 echo 1) Change ^Color
-echo 2) Close
+echo 2) Toogle Text to Speak
+echo 3) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 set /p Options=choose: 
 if %Options% == 1 goto Colors
-if %Options% == 2 goto start
+if %Options% == 2 goto ToogleTexttoSpeak
+if %Options% == 3 goto start
 goto Options
 
 :Colors
@@ -163,6 +165,20 @@ if %Colors% == 9 color 8
 if %Colors% == 10 color 9
 if %Colors% == 11 goto Options
 goto Colors
+
+:ToogleTexttoSpeak
+cls
+title Welcome to Toogle Text to Speak %username%
+echo 1) Text to Speak [ON]
+echo 2) Text to Speak [OFF]
+echo 3) Close
+echo.
+echo.
+set /p ToogleTexttoSpeak=choose: 
+if %ToogleTexttoSpeak% == [ON] toogle Text to Speak [ON]
+if %ToogleTexttoSpeak% == [OFF] toogle Text to Speak [OFF]
+if %ToogleTexttoSpeak% == 3 goto Options
+goto ToogleTexttoSpeak
 
 :PCInfo
 cls
@@ -228,9 +244,10 @@ echo 32) Snapchat Log-in
 echo 33) Micresoft
 echo 34) My Github Account
 echo 35) Baum's Github Account
-echo 36) Marv's Menu Discord Server
-echo 37) TeamSilencium Discord Server
-echo 38) Close
+echo 36) Replit
+echo 37) Marv's Menu Discord Server
+echo 38) TeamSilencium Discord Server
+echo 39) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -270,9 +287,10 @@ if %Website% == 32 start https://accounts.snapchat.com/accounts/login?continue=h
 if %Website% == 33 start https://www.microsoft.com/de-de?&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&s_kwcid=AL!4249!3!507886424089!e!!g!!microsoft&ef_id=Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s&OCID=AID2200063_SEM_Cj0KCQjw5JSLBhCxARIsAHgO2SfTDLNbwtKfXMafPKO0mbPT5ZUd1f4gyv6IRrMeQuOnD72Wwx1W8_UaAq9YEALw_wcB:G:s
 if %Website% == 34 start https://github.com/ANGECRACKT
 if %Website% == 35 start https://github.com/baum1810
-if %Website% == 36 start https://discord.gg/XdvwE6pM
-if %Website% == 37 start https://discord.gg/YT4GxBVP
-if %Website% == 38 goto MainMenu
+if %Website% == 36 start https://replit.com/~
+if %Website% == 37 start https://discord.gg/XdvwE6pM
+if %Website% == 38 start https://discord.gg/YT4GxBVP
+if %Website% == 39 goto MainMenu
 goto Website
 
 :Credits
@@ -319,7 +337,10 @@ title Welcome to the Programm Menu
 echo 1) Brave
 echo 2) Chrome
 echo 3) Explorer
-echo 4) Close
+echo 4) Editor
+echo 5) Notepad++
+echo 6) Paint
+echo 7) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -327,5 +348,8 @@ set /p Programme=choose:
 if %Programme% == 1 start brave.exe
 if %Programme% == 2 start chrome.exe
 if %Programme% == 3 start iexplore.exe
-if %Programme% == 4 goto MainMenu
+if %Programme% == 4 start notepad.exe
+if %Programme% == 5 start notepad++.exe
+if %Programme% == 6 start mspaint.exe
+if %Programme% == 7 goto MainMenu
 goto Programme
