@@ -3,8 +3,8 @@
 cls
 title Warning
 color C
-echo [INFO] Ich werde keine Verantwortung uebernehmen wenn schäden auf ihren PC angerichtet werden.
-echo [INFO] Das Password ist Marv492005
+echo [INFO] I am not responsible if your PC is damaged.
+echo [INFO] The Password is Marv492005
 echo.
 echo.
 echo 1) Continued
