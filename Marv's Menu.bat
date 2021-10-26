@@ -1,6 +1,26 @@
 @echo off
+:Warning
+cls
+title Warning
+color C
+echo [INFO] Ich werde keine Verantwortung uebernehmen wenn schäden auf ihren PC angerichtet werden.
+echo [INFO] Das Password ist Marv492005
+echo.
+echo.
+echo 1) Continued
+echo 2) Close
+echo.
+echo.
+echo                                                                                                     [Made By Marv492005]
+set /p Warning=choose: 
+if %Warning% == 1 goto Password
+if %Warning% == 2 goto exit
+goto Password
+
 :Password
 cls
+title Enter the password here
+color F
 set /p Password=Passwort: 
 if %Password% == Marv492005 goto Intro
 echo wrong
@@ -9,6 +29,7 @@ goto Password
 
 :Intro
 cls
+title Loading Screen
 echo set speechobject=createobject("sapi.spvoice") >%userprofile%\AppData\Local\Temp\welcome.vbs
 echo dim speechobject >>%userprofile%\AppData\Local\Temp\welcome.vbs
 echo speechobject.speak "Welcome %username%" >>%userprofile%\AppData\Local\Temp\welcome.vbs
