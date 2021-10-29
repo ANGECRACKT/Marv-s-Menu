@@ -4,7 +4,8 @@ cls
 title Warning
 color C
 echo [INFO] I am not responsible if your PC is damaged.
-echo [INFO] The Password is Marv492005
+echo [INFO] It will come new Updates.
+echo [INFO] The Password is Marv492005.
 echo.
 echo.
 echo 1) Continued
