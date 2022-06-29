@@ -128,7 +128,9 @@ echo 3) Website
 echo 4) Programms
 echo 5) Credits
 echo 6) Sherlock
-echo 7) Close
+echo 7) TeamSilencium Videos
+echo 8) Robux Codes Video
+echo 9) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -139,7 +141,9 @@ if %MainMenu% == 3 goto Website
 if %MainMenu% == 4 goto Programms
 if %MainMenu% == 5 goto Credits
 if %MainMenu% == 6 goto Sherlock
-if %MainMenu% == 7 goto start
+if %MainMenu% == 7 goto Videos
+if %MainMenu% == 8 goto RobuxCodes
+if %MainMenu% == 9 goto start
 goto MainMenu
 
 :Options
@@ -672,9 +676,11 @@ echo 33) Micresoft
 echo 34) My Github Account
 echo 35) Baum's Github Account
 echo 36) Replit
-echo 37) Marv's Menu Discord Server
-echo 38) TeamSilencium Discord Server
-echo 39) Close
+echo 37) Reddit
+echo 38) Marv's Menu Discord Server
+echo 39) TeamSilencium Discord Server
+echo 40) AnyDesk
+echo 41) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -715,9 +721,11 @@ if %Website% == 33 start https://www.microsoft.com/de-de?&ef_id=Cj0KCQjw5JSLBhCx
 if %Website% == 34 start https://github.com/ANGECRACKT
 if %Website% == 35 start https://github.com/baum1810
 if %Website% == 36 start https://replit.com/~
-if %Website% == 37 start https://discord.gg/XdvwE6pM
-if %Website% == 38 start https://discord.gg/YT4GxBVP
-if %Website% == 39 goto MainMenu
+if %Website% == 37 start https://www.reddit.com/
+if %Website% == 38 start https://discord.gg/XdvwE6pM
+if %Website% == 39 start https://discord.gg/YT4GxBVP
+if %Website% == 40 start https://anydesk.com/de?utm_term=anydesk&utm_campaign=Germany+-+Search+-+Lower+Funnel+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=3993259132&hsa_cam=1756998641&hsa_grp=69865131518&hsa_ad=567801914087&hsa_src=g&hsa_tgt=kwd-303074541300&hsa_kw=anydesk&hsa_mt=e&hsa_net=adwords&hsa_ver=3
+if %Website% == 41 goto MainMenu
 goto Website
 
 :Credits
@@ -780,3 +788,35 @@ if %Programme% == 5 start notepad++.exe
 if %Programme% == 6 start mspaint.exe
 if %Programme% == 7 goto MainMenu
 goto Programme
+
+:Videos
+cls
+title Welcome to the TeamSilencium Videos %username%
+echo 1) (Script, Hack) Cooking Simulator
+echo 2) (Script, Hack) Fortress Tycoon
+echo 3) (Script, Hack) Kitty
+echo 4) (Script, Hack) Skyblock
+echo 5) (Script, Hack) Streets of Bloxwood
+echo 6) Close
+echo.
+echo.
+set /p Videos=choose: 
+if %Videos% == 1 start https://youtu.be/49nLUaMVxUE
+if %Videos% == 2 start https://youtu.be/aWQbaDO5Yno
+if %Videos% == 3 start https://youtu.be/WFzP_jGNUQE
+if %Videos% == 4 start https://youtu.be/7ISf6iH7N3c
+if %Videos% == 5 start https://youtu.be/EW69d2xvB3w
+if %Videos% == 6 goto MainMenu
+goto Videos
+
+:RobuxCodes
+cls
+title Welcome to the RobuxCodes %username%
+echo 1) Robux Codes Video
+echo 2) Close
+echo.
+echo.
+set /p RobuxCodes=choose: 
+if %RobuxCodes% == 1 start https://youtu.be/dQw4w9WgXcQ
+if %RobuxCodes% == 2 goto MainMenu
+goto RobuxCodes
