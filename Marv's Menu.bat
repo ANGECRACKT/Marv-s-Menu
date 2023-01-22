@@ -379,7 +379,7 @@ PING 1.1.1.1 -n 1 -w 1 >NUL
 echo                                                                                                     [Made By Marv492005]
 echo 1) close
 set /p LoadingScreen2=choose: 
-if %LoadingScreen2% == 1 goto Options
+if %LoadingScreen2% == 1 goto ChangeLoadScreen
 goto LoadingScreen2
 
 :LoadingScreen3
