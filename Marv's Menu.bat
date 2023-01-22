@@ -115,7 +115,7 @@ echo                                                                            
 set /p start=choose: 
 if %start% == 1 goto MainMenu
 if %start% == 2 goto Options
-if %start% == 3 goto schliessen
+if %start% == 3 goto Goodbye
 goto start
 
 :MainMenu
@@ -130,7 +130,8 @@ echo 5) Credits
 echo 6) Sherlock
 echo 7) TeamSilencium Videos
 echo 8) Robux Codes Video
-echo 9) Close
+echo 9) Infos
+echo 10) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -143,7 +144,8 @@ if %MainMenu% == 5 goto Credits
 if %MainMenu% == 6 goto Sherlock
 if %MainMenu% == 7 goto Videos
 if %MainMenu% == 8 goto RobuxCodes
-if %MainMenu% == 9 goto start
+if %MainMenu% == 9 goto Info
+if %MainMenu% == 10 goto start
 goto MainMenu
 
 :Options
@@ -820,3 +822,29 @@ set /p RobuxCodes=choose:
 if %RobuxCodes% == 1 start https://youtu.be/dQw4w9WgXcQ
 if %RobuxCodes% == 2 goto MainMenu
 goto RobuxCodes
+
+:Info
+cls
+title Willkommen in der Info %username%
+echo Wir versuchen gerade an etwas zu arbeiten was dieses Menu etwas besser gestaltet
+echo 1) Close
+set /p Info=choose: 
+if %Info% == 1 goto MainMenu
+goto Info
+
+:Goodbye
+cls
+title Bis später %username%
+Color C
+echo Closeing Menu .
+timeout 1 >NUL
+cls
+echo Closeing Menu ..
+timeout 1 >NUL
+cls
+echo Closeing Menu ...
+timeout 1 >NUL
+cls
+echo Closeing Menu .
+msg * Man sieht sich.
+goto exit
