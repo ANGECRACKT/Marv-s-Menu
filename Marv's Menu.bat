@@ -834,7 +834,7 @@ goto Info
 
 :Goodbye
 cls
-title Bis später %username%
+title Bis bald %username%
 Color C
 echo Closeing Menu .
 timeout 1 >NUL
@@ -846,5 +846,12 @@ echo Closeing Menu ...
 timeout 1 >NUL
 cls
 echo Closeing Menu .
+echo set speechobject=createobject("sapi.spvoice") >%userprofile%\AppData\Local\Temp\welcome.vbs
+echo dim speechobject >>%userprofile%\AppData\Local\Temp\welcome.vbs
+echo speechobject.speak "Goodbye %username%" >>%userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+start %userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+del %userprofile%\AppData\Local\Temp\welcome.vbs
 msg * Man sieht sich.
 goto exit
