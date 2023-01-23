@@ -22,6 +22,13 @@ goto Password
 cls
 title Enter the password here
 color F
+echo set speechobject=createobject("sapi.spvoice") >%userprofile%\AppData\Local\Temp\welcome.vbs
+echo dim speechobject >>%userprofile%\AppData\Local\Temp\welcome.vbs
+echo speechobject.speak "Please enter the Password %username%" >>%userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+start %userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+del %userprofile%\AppData\Local\Temp\welcome.vbs
 set /p Password=Passwort: 
 if %Password% == Marv492005 goto Intro
 echo wrong
