@@ -46,63 +46,25 @@ start %userprofile%\AppData\Local\Temp\welcome.vbs
 timeout 1 >NUL
 del %userprofile%\AppData\Local\Temp\welcome.vbs
 msg * Welcome %username%
-@mode con cols=75 lines=1000
+@mode con cols=222 lines=38
 color A
-echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMNmdyso+//:--..````````.--://+syhmNMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMNds/-`                                  `-/ohNMMMMMMMMMMMM
-echo MMMMMMMMMNs:                                              .omMMMMMMMMM
-echo MMMMMMMMy`                                                   +NMMMMMMM
-timeout 1 >NUL
-echo MMMMMMMo                                                      -MMMMMMM
-echo MMMMMMh                                                        +MMMMMM
-echo MMMMMM-                                                        `mMMMMM
-echo MMMMMh                                                          +MMMMM
-echo MMMMM/      ./shdmmdhyo+-`                   -+shmNNNmdy+.      .MMMMM
-echo MMMMN`    /hhyosyhhdNMMMMNh/`             :yNMMMMNdhhhsoyhd+     dMMMM
-timeout 1 >NUL
-echo MMMMd   .s/    :shmNddhhNMMMNo`         +mMMMMdhhdNmds:    /s-   yMMMM
-echo MMMMs   .          `:yMNysmMMMh        yMMMmyymMh/`          .   oMMMM
-echo MMMM+                 `oNMhshd+        /dyohMNs.                 +MMMM
-echo MMMM:                   `/mMd:          .hMm+`                   :MMMM
-echo MMMM.         `.-::-.`    `dMMo        .Nm/     `.::::-`         -MMMM
-echo MMMM.     `+hNMMMMMMMNds:  `dMM/       ./    :smMMMMMMMMNh+`     .MMMM
-timeout 1 >NUL
-echo MMMM`  `-+NMMMMMMMMMMMMMMNy.yMMd          .yNMMMMMMMMMMMMMMN+-`  `MMMM
-echo MMMM`  /MMMMMMMMMMMMMMMMNmy.hMMN`         `smNmmmmmmddddddhhssys++MMMM
-echo MMMM`  +hso/::---..```      dMMN.                                `MMMM
-echo MMMM`                       dMMN.                                `MMMM
-echo MMMMy                      .NMMN`                                .MMMM
-echo MMMMMo                     +MMMN`                                /MMMM
-timeout 1 >NUL
-echo MMMMMMs                    dMMMN`                               -mMMMM
-echo MMMMN/md-                `sMMMMm                              .sMMMMMM
-echo MMMMM+`dMdo-.....-::/:`/dMMMMMMd        `yy/               `/hhoMMMMMM
-echo MMMMMN-.NMhNMMooo+/:.`.NMMh:NMM+           os   .ossssyhdmmMMm`hMMMMMM
-echo MMMMMMm`-Nm:NMh`       yMd .NMM.            /         +MMh.NN--MMMMMMM
-echo MMMMMMMh .my-mMNo`      -- .NMm`                    `yMMs +M: dMMMMMMM
-timeout 1 >NUL
-echo MMMMMMMMy``hh-mMMNy+.       .MN.     `/:          .oNMM+ +N/ oMMMMMMMM
-echo MMMMMMMMMy  om+oNMMMMNhs/:/omMMMmhyydNMMh:    .:odMMMN:.hN: +MMMMMMMMM
-echo MMMMMMMMMMh` :Nd//yNMMMMMMMMMMMMMs/hMMMMMMNmNMMMMMMm+.oNm- +MMMMMMMMMM
-echo MMMMMMMMMMMd` .dMd:`-+ymMMMMMMMd-   -dMMMMMMMMMNho- -yMh` oMMMMMMMMMMM
-echo MMMMMMMMMMMMm. `yMMm/`   .:/++o++oooooddhyso/:.     -mo `yMMMMMMMMMMMM
-echo MMMMMMMMMMMMMN:  oMMMNo-                           :m: .dMMMMMMMMMMMMM
-timeout 1 >NUL
-echo MMMMMMMMMMMMMMM+  +MMM:-::/:-.``                  +h` :NMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMs` /MM-     .:omNNNNNNy`        `s+  oMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMd. /M-        -MMMMMd.        .y- `hMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMN: +h        -MMMMM+         /` -mMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMs`.       .mMMMMMd`          +MMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMMN:       oMMMmmMM/        `hMMMMMMMMMMMMMMMMMMMMM
-timeout 1 >NUL
-echo MMMMMMMMMMMMMMMMMMMMMMMs`     /MMMMMMM:       :NMMMMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMMMMMd.    `NMMMMMN`     `yMMMMMMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMMMMMMNo`   oMMMMMo    .sNMMMMMMMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMMMMMMMMNs:.-MMMMM` -+hMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   
-timeout 2 >NUL
+echo MMMMMMMM               MMMMMMMM                                                            '::::'                      MMMMMMMM               MMMMMMMM                                                        
+echo M:::::::M             M:::::::M                                                            '::::'                      M:::::::M             M:::::::M                                                        
+echo M::::::::M           M::::::::M                                                            ':::''                      M::::::::M           M::::::::M                                                        
+echo M:::::::::M         M:::::::::M                                                           ':::'                        M:::::::::M         M:::::::::M                                                        
+echo M::::::::::M       M::::::::::M  aaaaaaaaaaaaa  rrrrr   rrrrrrrrrvvvvvvv           vvvvvvv''''       ssssssssss        M::::::::::M       M::::::::::M    eeeeeeeeeeee    nnnn  nnnnnnnn    uuuuuu    uuuuuu  
+echo M:::::::::::M     M:::::::::::M  a::::::::::::a r::::rrr:::::::::rv:::::v         v:::::v          ss::::::::::s       M:::::::::::M     M:::::::::::M  ee::::::::::::ee  n:::nn::::::::nn  u::::u    u::::u  
+echo M:::::::M::::M   M::::M:::::::M  aaaaaaaaa:::::ar:::::::::::::::::rv:::::v       v:::::v         ss:::::::::::::s      M:::::::M::::M   M::::M:::::::M e::::::eeeee:::::een::::::::::::::nn u::::u    u::::u  
+echo M::::::M M::::M M::::M M::::::M           a::::arr::::::rrrrr::::::rv:::::v     v:::::v          s::::::ssss:::::s     M::::::M M::::M M::::M M::::::Me::::::e     e:::::enn:::::::::::::::nu::::u    u::::u  
+echo M::::::M  M::::M::::M  M::::::M    aaaaaaa:::::a r:::::r     r:::::r v:::::v   v:::::v            s:::::s  ssssss      M::::::M  M::::M::::M  M::::::Me:::::::eeeee::::::e  n:::::nnnn:::::nu::::u    u::::u  
+echo M::::::M   M:::::::M   M::::::M  aa::::::::::::a r:::::r     rrrrrrr  v:::::v v:::::v               s::::::s           M::::::M   M:::::::M   M::::::Me:::::::::::::::::e   n::::n    n::::nu::::u    u::::u  
+echo M::::::M    M:::::M    M::::::M a::::aaaa::::::a r:::::r               v:::::v:::::v                   s::::::s        M::::::M    M:::::M    M::::::Me::::::eeeeeeeeeee    n::::n    n::::nu::::u    u::::u  
+echo M::::::M     MMMMM     M::::::Ma::::a    a:::::a r:::::r                v:::::::::v              ssssss   s:::::s      M::::::M     MMMMM     M::::::Me:::::::e             n::::n    n::::nu:::::uuuu:::::u  
+echo M::::::M               M::::::Ma::::a    a:::::a r:::::r                 v:::::::v               s:::::ssss::::::s     M::::::M               M::::::Me::::::::e            n::::n    n::::nu:::::::::::::::uu
+echo M::::::M               M::::::Ma:::::aaaa::::::a r:::::r                  v:::::v                s::::::::::::::s      M::::::M               M::::::M e::::::::eeeeeeee    n::::n    n::::n u:::::::::::::::u
+echo M::::::M               M::::::M a::::::::::aa:::ar:::::r                   v:::v                  s:::::::::::ss       M::::::M               M::::::M  ee:::::::::::::e    n::::n    n::::n  uu::::::::uu:::u
+echo MMMMMMMM               MMMMMMMM  aaaaaaaaaa  aaaarrrrrrr                    vvv                    sssssssssss         MMMMMMMM               MMMMMMMM    eeeeeeeeeeeeee    nnnnnn    nnnnnn    uuuuuuuu  uuuu
+timeout 5 >NUL
 
 :test
 cls
@@ -158,6 +120,7 @@ goto MainMenu
 :Options
 cls
 title Welcome to the Options %username%
+@mode con cols=122 lines=30
 echo 1) Change ^Color
 echo 2) Toogle Text to Speak [in Work]
 echo 3) Change Loading Screen
@@ -220,25 +183,28 @@ goto ToogleTexttoSpeak
 :ChangeLoadScreen
 cls
 title Welcome to the Change Loading Screen Option %username%
-echo 1) Standart Loading Screen
-echo 2) Loading Screen 1
-echo 3) Loading Screen 2
-echo 4) Loading Screen 3
-echo 5) Loading Screen 4
-echo 6) Close
+@mode con cols=122 lines=30
+echo 1) Loading Screen 1
+echo 2) Loading Screen 2
+echo 3) Loading Screen 3
+echo 4) Loading Screen 4
+echo 5) Loading Screen 5
+echo 6) Loading Screen 6
+echo 7) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 set /p ChangeLoadScreen=choose: 
-if %ChangeLoadScreen% == 1 goto StandartLoadingScreen
-if %ChangeLoadScreen% == 2 goto LoadingScreen1
-if %ChangeLoadScreen% == 3 goto LoadingScreen2
-if %ChangeLoadScreen% == 4 goto LoadingScreen3
-if %ChangeLoadScreen% == 5 goto LoadingScreen4
-if %ChangeLoadScreen% == 6 goto Options
+if %ChangeLoadScreen% == 1 goto LoadingScreen1
+if %ChangeLoadScreen% == 2 goto LoadingScreen2
+if %ChangeLoadScreen% == 3 goto LoadingScreen3
+if %ChangeLoadScreen% == 4 goto LoadingScreen4
+if %ChangeLoadScreen% == 5 goto LoadingScreen5
+if %ChangeLoadScreen% == 6 goto LoadingScreen6
+if %ChangeLoadScreen% == 7 goto Options
 goto ChangeLoadScreen
 
-:StandartLoadingScreen
+:LoadingScreen1
 cls
 title Welcome to the Standart Loading Screen %username%
 @mode con cols=75 lines=1000
@@ -302,11 +268,11 @@ echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 echo 1) Close
-set /p StandartLoadingScreen=choose: 
-if %StandartLoadingScreen% == 1 goto ChangeLoadScreen
-goto StandartLoadingScreen
+set /p LoadingScreen1=choose: 
+if %LoadingScreen1% == 1 goto ChangeLoadScreen
+goto LoadingScreen1
 
-:LoadingScreen1
+:LoadingScreen2
 cls
 title Welcome to the Loading Screen 1 %username%
 echo Warten .
@@ -319,11 +285,11 @@ echo Warten ...
 timeout 1 >NUL
 echo                                                                                                     [Made By Marv492005]
 echo 1) close
-set /p LoadingScreen1=choose: 
-if %LoadingScreen1% == 1 goto ChangeLoadScreen
-goto LoadingScreen1
+set /p LoadingScreen2=choose: 
+if %LoadingScreen2% == 1 goto ChangeLoadScreen
+goto LoadingScreen2
 
-:LoadingScreen2
+:LoadingScreen3
 cls
 title Welcome to the Loading Screen 2 %username%
 @echo off
@@ -385,11 +351,11 @@ echo ^|
 PING 1.1.1.1 -n 1 -w 1 >NUL
 echo                                                                                                     [Made By Marv492005]
 echo 1) close
-set /p LoadingScreen2=choose: 
-if %LoadingScreen2% == 1 goto ChangeLoadScreen
-goto LoadingScreen2
+set /p LoadingScreen3=choose: 
+if %LoadingScreen3% == 1 goto ChangeLoadScreen
+goto LoadingScreen3
 
-:LoadingScreen3
+:LoadingScreen4
 cls
 title Welcome to the Loading Screen 3 %username%
 echo  ----------------
@@ -591,11 +557,11 @@ echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 echo 1) close
-set /p LoadingScreen3=choose: 
-if %LoadingScreen3% == 1 goto ChangeLoadScreen
-goto LoadingScreen3
+set /p LoadingScreen4=choose: 
+if %LoadingScreen4% == 1 goto ChangeLoadScreen
+goto LoadingScreen4
 
-:LoadingScreen4
+:LoadingScreen5
 cls
 title Welcome to the Loading Screen 4 %username%
 echo =                    ^| 1  %%%
@@ -616,9 +582,38 @@ echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 echo 1) close
-set /p LoadingScreen4=choose: 
-if %LoadingScreen4% == 1 goto ChangeLoadScreen
-goto LoadingScreen4
+set /p LoadingScreen5=choose: 
+if %LoadingScreen5% == 1 goto ChangeLoadScreen
+goto LoadingScreen5
+
+:LoadingScreen6
+cls
+@mode con cols=222 lines=38
+echo MMMMMMMM               MMMMMMMM                                                            '::::'                      MMMMMMMM               MMMMMMMM                                                        
+echo M:::::::M             M:::::::M                                                            '::::'                      M:::::::M             M:::::::M                                                        
+echo M::::::::M           M::::::::M                                                            ':::''                      M::::::::M           M::::::::M                                                        
+echo M:::::::::M         M:::::::::M                                                           ':::'                        M:::::::::M         M:::::::::M                                                        
+echo M::::::::::M       M::::::::::M  aaaaaaaaaaaaa  rrrrr   rrrrrrrrrvvvvvvv           vvvvvvv''''       ssssssssss        M::::::::::M       M::::::::::M    eeeeeeeeeeee    nnnn  nnnnnnnn    uuuuuu    uuuuuu  
+echo M:::::::::::M     M:::::::::::M  a::::::::::::a r::::rrr:::::::::rv:::::v         v:::::v          ss::::::::::s       M:::::::::::M     M:::::::::::M  ee::::::::::::ee  n:::nn::::::::nn  u::::u    u::::u  
+echo M:::::::M::::M   M::::M:::::::M  aaaaaaaaa:::::ar:::::::::::::::::rv:::::v       v:::::v         ss:::::::::::::s      M:::::::M::::M   M::::M:::::::M e::::::eeeee:::::een::::::::::::::nn u::::u    u::::u  
+echo M::::::M M::::M M::::M M::::::M           a::::arr::::::rrrrr::::::rv:::::v     v:::::v          s::::::ssss:::::s     M::::::M M::::M M::::M M::::::Me::::::e     e:::::enn:::::::::::::::nu::::u    u::::u  
+echo M::::::M  M::::M::::M  M::::::M    aaaaaaa:::::a r:::::r     r:::::r v:::::v   v:::::v            s:::::s  ssssss      M::::::M  M::::M::::M  M::::::Me:::::::eeeee::::::e  n:::::nnnn:::::nu::::u    u::::u  
+echo M::::::M   M:::::::M   M::::::M  aa::::::::::::a r:::::r     rrrrrrr  v:::::v v:::::v               s::::::s           M::::::M   M:::::::M   M::::::Me:::::::::::::::::e   n::::n    n::::nu::::u    u::::u  
+echo M::::::M    M:::::M    M::::::M a::::aaaa::::::a r:::::r               v:::::v:::::v                   s::::::s        M::::::M    M:::::M    M::::::Me::::::eeeeeeeeeee    n::::n    n::::nu::::u    u::::u  
+echo M::::::M     MMMMM     M::::::Ma::::a    a:::::a r:::::r                v:::::::::v              ssssss   s:::::s      M::::::M     MMMMM     M::::::Me:::::::e             n::::n    n::::nu:::::uuuu:::::u  
+echo M::::::M               M::::::Ma::::a    a:::::a r:::::r                 v:::::::v               s:::::ssss::::::s     M::::::M               M::::::Me::::::::e            n::::n    n::::nu:::::::::::::::uu
+echo M::::::M               M::::::Ma:::::aaaa::::::a r:::::r                  v:::::v                s::::::::::::::s      M::::::M               M::::::M e::::::::eeeeeeee    n::::n    n::::n u:::::::::::::::u
+echo M::::::M               M::::::M a::::::::::aa:::ar:::::r                   v:::v                  s:::::::::::ss       M::::::M               M::::::M  ee:::::::::::::e    n::::n    n::::n  uu::::::::uu:::u
+echo MMMMMMMM               MMMMMMMM  aaaaaaaaaa  aaaarrrrrrr                    vvv                    sssssssssss         MMMMMMMM               MMMMMMMM    eeeeeeeeeeeeee    nnnnnn    nnnnnn    uuuuuuuu  uuuu
+echo.
+timeout 5 >NUL
+echo                                                                                                     [Made By Marv492005]
+echo 1) close
+set /p LoadingScreen6=choose: 
+if %LoadingScreen6% == 1 goto ChangeLoadScreen
+goto LoadingScreen6
+
+
 
 :PCInfo
 cls
