@@ -744,7 +744,7 @@ echo ___________________________________________________________________________
 timeout 5 >NUL
 echo.
 echo 1) close
-set /p LoadingScreen7
+set /p LoadingScreen7=choose: 
 if %LoadingScreen7% == 1 goto ChangeLoadScreen
 goto LoadingScreen7
 
