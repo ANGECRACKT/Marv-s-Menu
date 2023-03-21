@@ -1,3 +1,5 @@
+:::Only For Windows 11:::
+
 @echo off
 :Warning
 cls
@@ -48,22 +50,13 @@ del %userprofile%\AppData\Local\Temp\welcome.vbs
 msg * Welcome %username%
 @mode con cols=222 lines=38
 color A
-echo MMMMMMMM               MMMMMMMM                                                            '::::'                      MMMMMMMM               MMMMMMMM                                                        
-echo M:::::::M             M:::::::M                                                            '::::'                      M:::::::M             M:::::::M                                                        
-echo M::::::::M           M::::::::M                                                            ':::''                      M::::::::M           M::::::::M                                                        
-echo M:::::::::M         M:::::::::M                                                           ':::'                        M:::::::::M         M:::::::::M                                                        
-echo M::::::::::M       M::::::::::M  aaaaaaaaaaaaa  rrrrr   rrrrrrrrrvvvvvvv           vvvvvvv''''       ssssssssss        M::::::::::M       M::::::::::M    eeeeeeeeeeee    nnnn  nnnnnnnn    uuuuuu    uuuuuu  
-echo M:::::::::::M     M:::::::::::M  a::::::::::::a r::::rrr:::::::::rv:::::v         v:::::v          ss::::::::::s       M:::::::::::M     M:::::::::::M  ee::::::::::::ee  n:::nn::::::::nn  u::::u    u::::u  
-echo M:::::::M::::M   M::::M:::::::M  aaaaaaaaa:::::ar:::::::::::::::::rv:::::v       v:::::v         ss:::::::::::::s      M:::::::M::::M   M::::M:::::::M e::::::eeeee:::::een::::::::::::::nn u::::u    u::::u  
-echo M::::::M M::::M M::::M M::::::M           a::::arr::::::rrrrr::::::rv:::::v     v:::::v          s::::::ssss:::::s     M::::::M M::::M M::::M M::::::Me::::::e     e:::::enn:::::::::::::::nu::::u    u::::u  
-echo M::::::M  M::::M::::M  M::::::M    aaaaaaa:::::a r:::::r     r:::::r v:::::v   v:::::v            s:::::s  ssssss      M::::::M  M::::M::::M  M::::::Me:::::::eeeee::::::e  n:::::nnnn:::::nu::::u    u::::u  
-echo M::::::M   M:::::::M   M::::::M  aa::::::::::::a r:::::r     rrrrrrr  v:::::v v:::::v               s::::::s           M::::::M   M:::::::M   M::::::Me:::::::::::::::::e   n::::n    n::::nu::::u    u::::u  
-echo M::::::M    M:::::M    M::::::M a::::aaaa::::::a r:::::r               v:::::v:::::v                   s::::::s        M::::::M    M:::::M    M::::::Me::::::eeeeeeeeeee    n::::n    n::::nu::::u    u::::u  
-echo M::::::M     MMMMM     M::::::Ma::::a    a:::::a r:::::r                v:::::::::v              ssssss   s:::::s      M::::::M     MMMMM     M::::::Me:::::::e             n::::n    n::::nu:::::uuuu:::::u  
-echo M::::::M               M::::::Ma::::a    a:::::a r:::::r                 v:::::::v               s:::::ssss::::::s     M::::::M               M::::::Me::::::::e            n::::n    n::::nu:::::::::::::::uu
-echo M::::::M               M::::::Ma:::::aaaa::::::a r:::::r                  v:::::v                s::::::::::::::s      M::::::M               M::::::M e::::::::eeeeeeee    n::::n    n::::n u:::::::::::::::u
-echo M::::::M               M::::::M a::::::::::aa:::ar:::::r                   v:::v                  s:::::::::::ss       M::::::M               M::::::M  ee:::::::::::::e    n::::n    n::::n  uu::::::::uu:::u
-echo MMMMMMMM               MMMMMMMM  aaaaaaaaaa  aaaarrrrrrr                    vvv                    sssssssssss         MMMMMMMM               MMMMMMMM    eeeeeeeeeeeeee    nnnnnn    nnnnnn    uuuuuuuu  uuuu
+echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
+echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
+echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
+echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
+echo   +#+       +#+ +#+     +#+ +#+    +#+  +#+   +#+           +#+       +#+ +#+        +#+  +#+#+# +#+    +#+     
+echo  #+#       #+# #+#     #+# #+#    #+#   #+#+#+#            #+#       #+# #+#        #+#   #+#+# #+#    #+#      
+echo ###       ### ###     ### ###    ###     ###              ###       ### ########## ###    ####  ########    
 timeout 5 >NUL
 
 :test
