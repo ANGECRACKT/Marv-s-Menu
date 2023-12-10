@@ -820,7 +820,9 @@ echo 38) Marv's Menu Discord Server
 echo 39) TeamSilencium Discord Server
 echo 40) AnyDesk
 echo 41) photopea
-echo 42) Close
+echo 42) Trash Gang
+echo 43) Trash Gang Discord
+echo 44) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -866,7 +868,9 @@ if %Website% == 38 start https://discord.gg/XdvwE6pM
 if %Website% == 39 start https://discord.gg/YT4GxBVP
 if %Website% == 40 start https://anydesk.com/de?utm_term=anydesk&utm_campaign=Germany+-+Search+-+Lower+Funnel+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=3993259132&hsa_cam=1756998641&hsa_grp=69865131518&hsa_ad=567801914087&hsa_src=g&hsa_tgt=kwd-303074541300&hsa_kw=anydesk&hsa_mt=e&hsa_net=adwords&hsa_ver=3
 if %Website% == 41 start https://photopea.com
-if %Website% == 42 goto MainMenu
+if %Website% == 42 start https://trashgang.de/
+if %Website% == 43 start https://trashgang.de/discord
+if %Website% == 44 goto MainMenu
 goto Website
 
 :Credits
