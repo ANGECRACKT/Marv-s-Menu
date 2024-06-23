@@ -786,8 +786,8 @@ if %Website% == 38 start https://discord.gg/XdvwE6pM
 if %Website% == 39 start https://discord.gg/YT4GxBVP
 if %Website% == 40 start https://anydesk.com/de?utm_term=anydesk&utm_campaign=Germany+-+Search+-+Lower+Funnel+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=3993259132&hsa_cam=1756998641&hsa_grp=69865131518&hsa_ad=567801914087&hsa_src=g&hsa_tgt=kwd-303074541300&hsa_kw=anydesk&hsa_mt=e&hsa_net=adwords&hsa_ver=3
 if %Website% == 41 start https://www.photopea.com/
-if %Website% == 42 start https://trashgang.de/
-if %Website% == 43 start https://trashgang.de/discord
+if %Website% == 42 start https://trashga.ng/
+if %Website% == 43 start https://trashga.ng/discord/
 if %Website% == 44 goto MainMenu
 goto Website
 
