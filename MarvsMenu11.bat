@@ -1,4 +1,4 @@
-:::Only For Windows 11:::
+:::ONLY FOR WINDOWS 11:::
 
 @echo off
 :Warning
@@ -8,6 +8,7 @@ color C
 echo [INFO] I am not responsible if your PC is damaged.
 echo [INFO] It will come new Updates.
 echo [INFO] The Password is Marv492005.
+echo [INFO] The Other Password is OtherUser
 echo.
 echo.
 echo 1) Continued
@@ -16,9 +17,39 @@ echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 set /p Warning=choose: 
-if %Warning% == 1 goto Password
-if %Warning% == 2 goto exit
+if %Warning% == 1 goto Userchoose
+if %Warning% == 2 goto Goodbye
 goto Password
+
+:Userchoose
+cls
+title Choose a User
+color F
+echo 1) Marv492005
+echo 2) Other User [IN WORK]
+echo.
+echo 3) Back
+set /p Userchoose=choose: 
+if %Userchoose% == 1 goto Password
+if %Userchoose% == 2 goto Password2
+if %Userchoose% == 3 goto Goodbye
+goto Userchoose
+
+:Password2
+cls
+title Enter The password here
+echo set speechobject=createobject("sapi.spvoice") >%userprofile%\AppData\Local\Temp\welcome.vbs
+echo dim speechobject >>%userprofile%\AppData\Local\Temp\welcome.vbs
+echo speechobject.speak "Please enter the Password %username%" >>%userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+start %userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+del %userprofile%\AppData\Local\Temp\welcome.vbs
+set /p Password2=Passwort: 
+if %Password2% == OtherUser goto Intro
+echo wrong
+pause
+goto Password2
 
 :Password
 cls
@@ -245,8 +276,7 @@ echo 3) Loading Screen 3
 echo 4) Loading Screen 4
 echo 5) Loading Screen 5
 echo 6) Loading Screen 6
-echo 7) Loading Screen 7
-echo 8) Close
+echo 7) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -257,8 +287,7 @@ if %ChangeLoadScreen% == 3 goto LoadingScreen3
 if %ChangeLoadScreen% == 4 goto LoadingScreen4
 if %ChangeLoadScreen% == 5 goto LoadingScreen5
 if %ChangeLoadScreen% == 6 goto LoadingScreen6
-if %ChangeLoadScreen% == 7 goto LoadingScreen7
-if %ChangeLoadScreen% == 8 goto Options
+if %ChangeLoadScreen% == 7 goto Options
 goto ChangeLoadScreen
 
 :LoadingScreen1
@@ -670,84 +699,6 @@ set /p LoadingScreen6=choose:
 if %LoadingScreen6% == 1 goto ChangeLoadScreen
 goto LoadingScreen6
 
-:LoadingScreen7
-cls
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
-echo   +#+       +#+ +#+     +#+ +#+    +#+  +#+   +#+           +#+       +#+ +#+        +#+  +#+#+# +#+    +#+     
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
-echo   +#+       +#+ +#+     +#+ +#+    +#+  +#+   +#+           +#+       +#+ +#+        +#+  +#+#+# +#+    +#+     
-echo  #+#       #+# #+#     #+# #+#    #+#   #+#+#+#            #+#       #+# #+#        #+#   #+#+# #+#    #+#      
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
-echo   +#+       +#+ +#+     +#+ +#+    +#+  +#+   +#+           +#+       +#+ +#+        +#+  +#+#+# +#+    +#+     
-echo  #+#       #+# #+#     #+# #+#    #+#   #+#+#+#            #+#       #+# #+#        #+#   #+#+# #+#    #+#      
-echo ###       ### ###     ### ###    ###     ###              ###       ### ########## ###    ####  ########    
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
-echo   +#+       +#+ +#+     +#+ +#+    +#+  +#+   +#+           +#+       +#+ +#+        +#+  +#+#+# +#+    +#+     
-echo  #+#       #+# #+#     #+# #+#    #+#   #+#+#+#            #+#       #+# #+#        #+#   #+#+# #+#    #+#      
-echo ###       ### ###     ### ###    ###     ###              ###       ### ########## ###    ####  ########    
-echo ______________________________________________________________________________________________________________
-timeout 0.3 >NUL
-cls
-
-echo         :::   :::       :::     :::::::::  :::     :::            :::   :::   :::::::::: ::::    ::: :::    ::: 
-echo       :+:+: :+:+:    :+: :+:   :+:    :+: :+:     :+:           :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:  
-echo     +:+ +:+:+ +:+  +:+   +:+  +:+    +:+ +:+     +:+          +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+   
-echo    +#+  +:+  +#+ +#++:++#++: +#++:++#:  +#+     +:+          +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+    
-echo   +#+       +#+ +#+     +#+ +#+    +#+  +#+   +#+           +#+       +#+ +#+        +#+  +#+#+# +#+    +#+     
-echo  #+#       #+# #+#     #+# #+#    #+#   #+#+#+#            #+#       #+# #+#        #+#   #+#+# #+#    #+#      
-echo ###       ### ###     ### ###    ###     ###              ###       ### ########## ###    ####  ########    
-echo ______________________________________________________________________________________________________________
-echo ______________________________________________________________________________________________________________
-timeout 5 >NUL
-echo.
-echo 1) close
-set /p LoadingScreen7=choose: 
-if %LoadingScreen7% == 1 goto ChangeLoadScreen
-goto LoadingScreen7
-
 
 
 :PCInfo
@@ -822,7 +773,8 @@ echo 40) AnyDesk
 echo 41) photopea
 echo 42) Trash Gang
 echo 43) Trash Gang Discord
-echo 44) Close
+echo 44) Onion Browser
+echo 45) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -867,10 +819,11 @@ if %Website% == 37 start https://www.reddit.com/
 if %Website% == 38 start https://discord.gg/XdvwE6pM
 if %Website% == 39 start https://discord.gg/YT4GxBVP
 if %Website% == 40 start https://anydesk.com/de?utm_term=anydesk&utm_campaign=Germany+-+Search+-+Lower+Funnel+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=3993259132&hsa_cam=1756998641&hsa_grp=69865131518&hsa_ad=567801914087&hsa_src=g&hsa_tgt=kwd-303074541300&hsa_kw=anydesk&hsa_mt=e&hsa_net=adwords&hsa_ver=3
-if %Website% == 41 start https://photopea.com
+if %Website% == 41 start https://www.photopea.com/
 if %Website% == 42 start https://trashga.ng/
 if %Website% == 43 start https://trashga.ng/discord/
-if %Website% == 44 goto MainMenu
+if %Website% == 44 start https://www.torproject.org/de/download/
+if %Website% == 45 goto MainMenu
 goto Website
 
 :Credits
@@ -1082,3 +1035,4 @@ timeout 1 >NUL
 del %userprofile%\AppData\Local\Temp\welcome.vbs
 msg * Man sieht sich.
 goto exit
+
