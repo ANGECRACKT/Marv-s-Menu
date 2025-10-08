@@ -182,11 +182,10 @@ echo 2) IP Info
 echo 3) Website
 echo 4) Programms
 echo 5) Credits
-echo 6) Sherlock
-echo 7) TeamSilencium Videos
-echo 8) Robux Codes Video
-echo 9) Infos
-echo 10) Close
+echo 6) TeamSilencium Videos
+echo 7) Robux Codes Video
+echo 8) Infos
+echo 9) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -196,11 +195,10 @@ if %MainMenu% == 2 goto IP Info
 if %MainMenu% == 3 goto Website
 if %MainMenu% == 4 goto Programms
 if %MainMenu% == 5 goto Credits
-if %MainMenu% == 6 goto Sherlock
-if %MainMenu% == 7 goto Videos
-if %MainMenu% == 8 goto RobuxCodes
-if %MainMenu% == 9 goto Info
-if %MainMenu% == 10 goto start
+if %MainMenu% == 6 goto Videos
+if %MainMenu% == 7 goto RobuxCodes
+if %MainMenu% == 8 goto Info
+if %MainMenu% == 9 goto start
 goto MainMenu
 
 :Options
@@ -848,21 +846,6 @@ echo TeamSilencium Discord Server: https://discord.gg/YT4GxBVP >>Credits.txt
 echo Viel Spaß mit diesem Menü >>Credits.txt
 start Credits.txt
 goto MainMenu
-
-:Sherlock
-cls
-title Welcome to Sherlock %username% (Made By Baum)
-msg * Web Version from Sherlock Click on the Play Button
-echo.
-echo 1) Sherlock
-echo 2) Close
-echo.
-echo.
-echo                                                                                                     [Made By Marv492005]
-set /p Sherlock=choose: 
-if %Sherlock% == 1 start https://replit.com/@sjadhiasah/nicht-sherlock
-if %Sherlock% == 2 goto MainMenu
-goto Sherlock
 
 :Programms
 cls
