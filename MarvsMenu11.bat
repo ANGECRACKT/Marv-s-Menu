@@ -772,7 +772,8 @@ echo 41) photopea
 echo 42) Trash Gang
 echo 43) Trash Gang Discord
 echo 44) Onion Browser
-echo 45) Close
+echo 45) Mircosoft Store
+echo 46) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -821,7 +822,8 @@ if %Website% == 41 start https://www.photopea.com/
 if %Website% == 42 start https://trashga.ng/
 if %Website% == 43 start https://trashga.ng/discord/
 if %Website% == 44 start https://www.torproject.org/de/download/
-if %Website% == 45 goto MainMenu
+if %Website% == 45 start https://apps.microsoft.com/home?hl=de-DE&gl=DE
+if %Website% == 46 goto MainMenu
 goto Website
 
 :Credits
