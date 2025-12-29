@@ -12,14 +12,28 @@ echo [INFO] The Other Password is OtherUser
 echo.
 echo.
 echo 1) Continued
-echo 2) Close
+echo 2) Changelog
+echo 3) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
 set /p Warning=choose: 
 if %Warning% == 1 goto Userchoose
-if %Warning% == 2 goto Goodbye
+if %Warning% == 2 goto Changelog
+if %Warning% == 3 goto Goodbye
 goto Password
+
+:Changelog
+cls
+title Changelog
+echo [+] Added Changelog
+echo [+] Added Username Info
+echo.
+echo.
+echo 1) close
+set /p Changelog=choose: 
+if %Changelog% == 1 goto Warning
+goto Changelog
 
 :Userchoose
 cls
@@ -185,7 +199,8 @@ echo 5) Credits
 echo 6) TeamSilencium Videos
 echo 7) Robux Codes Video
 echo 8) Infos
-echo 9) Close
+echo 9) Username Info
+echo 10) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -198,7 +213,8 @@ if %MainMenu% == 5 goto Credits
 if %MainMenu% == 6 goto Videos
 if %MainMenu% == 7 goto RobuxCodes
 if %MainMenu% == 8 goto Info
-if %MainMenu% == 9 goto start
+if %MainMenu% == 9 goto Password3
+if %MainMenu% == 10 goto start
 goto MainMenu
 
 :Options
@@ -912,6 +928,34 @@ echo 1) Close
 set /p Info=choose: 
 if %Info% == 1 goto MainMenu
 goto Info
+
+:Password3
+cls
+title Enter The password here
+echo set speechobject=createobject("sapi.spvoice") >%userprofile%\AppData\Local\Temp\welcome.vbs
+echo dim speechobject >>%userprofile%\AppData\Local\Temp\welcome.vbs
+echo speechobject.speak "Please enter the Password %username%" >>%userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+start %userprofile%\AppData\Local\Temp\welcome.vbs
+timeout 1 >NUL
+del %userprofile%\AppData\Local\Temp\welcome.vbs
+set /p Password2=Passwort: 
+if %Password2% == HeilManfred goto UsernameInfo
+echo wrong
+pause
+goto Password3
+
+:UsernameInfo
+cls
+title Here you can see where someone is registered.
+echo 1) Username Search
+echo 2) close
+echo.
+echo.
+set /p UsernameInfo=choose: 
+if %UsernameInfo% == 1 start https://whatsmyname.app/
+if %UsernameInfo% == 2 goto MainMenu
+goto UsernameInfo
 
 :Goodbye
 cls
