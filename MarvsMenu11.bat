@@ -26,8 +26,7 @@ goto Password
 :Changelog
 cls
 title Changelog
-echo [+] Added Changelog
-echo [+] Added Username Info
+echo [+] Added AI Assistent
 echo.
 echo.
 echo 1) close
@@ -201,8 +200,9 @@ echo 7) Robux Codes Video
 echo 8) Infos
 echo 9) Username Info
 echo 10) ProgrammingLanguage
-echo 11) test
-echo 12) Close
+echo 11) AI Assistent
+echo 12) test
+echo 13) Close
 echo.
 echo.
 echo                                                                                                     [Made By Marv492005]
@@ -217,8 +217,9 @@ if %MainMenu% == 7 goto RobuxCodes
 if %MainMenu% == 8 goto Info
 if %MainMenu% == 9 goto Password3
 if %MainMenu% == 10 goto ProgrammingLanguage
-if %MainMenu% == 11 goto test
-if %MainMenu% == 12 goto start
+if %MainMenu% == 11 goto AIassistent
+if %MainMenu% == 12 goto test
+if %MainMenu% == 13 goto start
 goto MainMenu
 
 :Options
@@ -845,6 +846,19 @@ if %Website% == 44 start https://www.torproject.org/de/download/
 if %Website% == 45 start https://apps.microsoft.com/home?hl=de-DE&gl=DE
 if %Website% == 46 goto MainMenu
 goto Website
+
+:AIassistent
+cls
+title Choose your AI Assistent %username%
+echo 1) Chat GPT
+echo 2) Google AI
+echo 3) close
+echo.
+set /p AIassistent=choose: 
+if %AIassistent% == 1 start https://chatgpt.com/
+if %AIassistent% == 2 goto https://gemini.google.com/
+if %AIassistent5 == 3 goto MainMenu
+goto AIassistent
 
 :Credits
 cls
